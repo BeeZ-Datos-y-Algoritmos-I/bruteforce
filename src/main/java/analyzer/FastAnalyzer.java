@@ -86,7 +86,7 @@ public class FastAnalyzer implements IAnalyzer {
 
             }
 
-            WRITER.println("Path Analizado: " + PATH);
+            WRITER.println("Path analizado: " + PATH);
             WRITER.println("Abejas totales: " + bees);
             WRITER.println("Abejas con riesgo de colisión: " + collision);
             WRITER.flush();
@@ -107,6 +107,11 @@ public class FastAnalyzer implements IAnalyzer {
                 Math.pow((abeja1.getY() - abeja2.getY())*111111,2) +
                 Math.pow(abeja1.getZ() - abeja2.getZ(),2)
         );
+    }
+
+    @Override
+    public boolean requiresReader() {
+        return false;
     }
 
 }
