@@ -103,9 +103,9 @@ public class FastAnalyzer implements IAnalyzer {
     }
 
     public static double distancia(Point3D abeja1, Point3D abeja2){
-        return Math.sqrt(Math.pow((abeja1.getX() - abeja2.getX())*111111,2) +
-                Math.pow((abeja1.getY() - abeja2.getY())*111111,2) +
-                Math.pow(abeja1.getZ() - abeja2.getZ(),2)
+        return Math.sqrt(Math.pow((abeja1.getX() - abeja2.getX()) * 111111, 2) +
+                Math.pow((abeja1.getY() - abeja2.getY()) * 111111, 2) +
+                Math.pow(abeja1.getZ() - abeja2.getZ(), 2)
         );
     }
 
